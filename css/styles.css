@@ -240,19 +240,26 @@ h1 {
 /* Estilos responsivos */
 @media (max-width: 768px) {
     h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .container {
-        padding: 20px;
+        padding: 15px;
     }
 
     #question-container {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        padding: 15px;
     }
 
     .answer-btn {
         font-size: 1rem;
+        padding: 12px;
+    }
+
+    #next-question-btn {
+        font-size: 1rem;
+        padding: 10px;
     }
 
     #lifelines {
@@ -276,20 +283,22 @@ h1 {
 
 @media (max-width: 480px) {
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     #question-container {
-        font-size: 1rem;
-    }
-
-    .answer-btn {
         font-size: 0.9rem;
         padding: 10px;
     }
 
+    .answer-btn {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
     #next-question-btn {
-        font-size: 1rem;
+        font-size: 0.8rem;
+        padding: 8px;
     }
 
     #lifelines button {
@@ -300,6 +309,6 @@ h1 {
 
     #error-counter, #question-counter {
         bottom: 60px;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }
