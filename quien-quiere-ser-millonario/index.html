@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quién quiere ser millonario?</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>¿Quién quiere ser millonario?</h1>
+        <div id="game">
+            <div id="question-container">
+                <p id="question">Pregunta aparecerá aquí</p>
+            </div>
+            <div id="answers-container">
+                <!-- Botones de respuestas -->
+                <button class="answer-btn" id="answer1">Respuesta 1</button>
+                <button class="answer-btn" id="answer2">Respuesta 2</button>
+                <button class="answer-btn" id="answer3">Respuesta 3</button>
+                <button class="answer-btn" id="answer4">Respuesta 4</button>
+            </div>
+
+            <!-- Botón para pasar a la siguiente pregunta -->
+            <button id="next-question-btn" disabled>Siguiente</button>
+        </div>
+    </div>
+
+    <!-- Contador de errores -->
+    <div id="error-counter">
+        Errores: 0 de 3
+    </div>
+
+    <!-- Contador de preguntas -->
+    <div id="question-counter">
+        Pregunta 1 de 15
+    </div>
+
+    <!-- Comodines -->
+    <div id="lifelines">
+        <button id="call-lifeline">Comodín de la llamada</button>
+        <button id="audience-lifeline">Comodín del público</button>
+        <button id="fifty-lifeline">Comodín 50/50</button>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
