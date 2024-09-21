@@ -14,7 +14,7 @@ body {
 /* Contenedor principal */
 .container {
     max-width: 900px;
-    width: 100%;
+    width: 90%;
     padding: 30px;
     background-color: #011f4b;
     border-radius: 15px;
@@ -107,8 +107,8 @@ h1 {
 /* Contador de errores */
 #error-counter {
     position: fixed;
-    bottom: 20px;
-    right: 250px;
+    bottom: 80px; /* Ajustado para que no se superponga con el contador de preguntas */
+    right: 20px;
     background-color: #dc3545;
     color: white;
     padding: 10px 20px;
@@ -141,12 +141,13 @@ h1 {
     left: 20px;
     display: flex;
     gap: 10px;
+    flex-direction: column; /* Los comodines ahora se alinean verticalmente en pantallas pequeñas */
 }
 
 /* Botones redondos de los comodines */
 #lifelines button {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     background-color: #28a745;
     color: white;
     border: none;
@@ -268,15 +269,13 @@ h1 {
     }
 
     #lifelines button {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
         font-size: 0.8rem;
         margin-bottom: 10px;
     }
 
     #error-counter, #question-counter {
-        bottom: 80px;
-        right: 20px;
         font-size: 1rem;
     }
 }
@@ -302,13 +301,16 @@ h1 {
     }
 
     #lifelines button {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         font-size: 0.7rem;
     }
 
-    #error-counter, #question-counter {
-        bottom: 60px;
-        font-size: 0.8rem;
+    #error-counter {
+        bottom: 70px; /* Ajustado para no superponerse en pantallas pequeñas */
+    }
+
+    #question-counter {
+        bottom: 20px;
     }
 }
