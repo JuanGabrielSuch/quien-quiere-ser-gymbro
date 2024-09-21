@@ -33,7 +33,6 @@ function classifyQuestionsByDifficulty() {
     // Combinar todas las preguntas en el orden correcto de dificultad
     questions = [...easyQuestions, ...mediumQuestions, ...hardQuestions];
 }
-
 function showQuestion() {
     const questionElement = document.getElementById('question');
     const answerButtons = document.querySelectorAll('.answer-btn');
@@ -45,6 +44,9 @@ function showQuestion() {
     // Muestra la pregunta actual
     let currentQuestion = questions[currentQuestionIndex];
     questionElement.innerText = currentQuestion.question;
+    
+    // Aquí cambiamos el texto que se pasa a la función speak
+    speak(currentQuestion.question); // Solo la pregunta en texto
     
     // Muestra las respuestas y añade los eventos de clic
     answerButtons.forEach((button, index) => {
@@ -61,6 +63,46 @@ function showQuestion() {
     // Actualiza el contador de preguntas
     updateCounter();
 }
+// Inicializamos la variable de control de reproducción de voz
+let canPlayVoice = false;
+
+// Función para alternar la reproducción de la voz
+function toggleVoice() {
+    canPlayVoice = !canPlayVoice;
+    const voiceButton = document.getElementById('voice-btn');
+    
+    if (canPlayVoice) {
+        voiceButton.innerText = "Reproducir Voz";
+        speak(questions[currentQuestionIndex].question); // Reproducir la pregunta
+    } else {
+        voiceButton.innerText = "Activar Voz";
+    }
+}
+
+// Función para leer el texto de la pregunta
+function speak(text) {
+    if (canPlayVoice && 'speechSynthesis' in window) {
+        let synth = window.speechSynthesis;
+        let utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'ca-ES'; // Idioma catalán xD
+
+        utterance.onstart = function() {
+            console.log('La síntesis de voz ha comenzado.');
+        };
+        utterance.onend = function() {
+            console.log('La síntesis de voz ha terminado.');
+        };
+        utterance.onerror = function(event) {
+            console.error('Error en la síntesis de voz:', event.error);
+        };
+
+        synth.speak(utterance); // Iniciar la reproducción
+    } else {
+        console.log('La voz está desactivada o el navegador no soporta speechSynthesis.');
+    }
+}
+
+
 
 // Función para gestionar los clics en los botones de respuesta
 function handleClick(event) {
