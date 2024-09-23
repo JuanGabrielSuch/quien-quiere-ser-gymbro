@@ -84,7 +84,7 @@ function speak(text) {
     if (canPlayVoice && 'speechSynthesis' in window) {
         let synth = window.speechSynthesis;
         let utterance = new SpeechSynthesisUtterance(text);
-        utterance.lang = 'ca-ES'; // Idioma catalán xD
+        utterance.lang = 'es-ES'; // Idioma catalán xD
 
         utterance.onstart = function() {
             console.log('La síntesis de voz ha comenzado.');
