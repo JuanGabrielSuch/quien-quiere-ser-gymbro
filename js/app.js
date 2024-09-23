@@ -79,6 +79,66 @@ function toggleVoice() {
     }
 }
 
+// Elemento del menú principal
+const mainMenu = document.getElementById('main-menu');
+// Elemento del contenedor de preguntas
+const gameContainer = document.getElementById('game');
+// Contadores y comodines
+const errorCounter = document.getElementById('error-counter');
+const questionCounter = document.getElementById('question-counter');
+const lifelines = document.getElementById('lifelines');
+
+// Función para empezar el juego
+document.getElementById('play-btn').addEventListener('click', function() {
+    mainMenu.style.display = 'none'; // Oculta el menú principal
+    gameContainer.style.display = 'block'; // Muestra el contenedor de preguntas
+    errorCounter.style.display = 'block'; // Muestra el contador de errores
+    questionCounter.style.display = 'block'; // Muestra el contador de preguntas
+    lifelines.style.display = 'flex'; // Muestra los comodines
+    showQuestion(); // Llama a la función que muestra la primera pregunta
+});
+
+
+// Obtener elementos del DOM
+const backgroundMusic = document.getElementById('background-music');
+const settingsMenu = document.getElementById('settings-menu');
+const muteBtn = document.getElementById('mute-btn');
+let isMuted = false; // Variable para controlar si la música está silenciada
+
+
+// Control de volumen de la música
+document.getElementById('music-volume').addEventListener('input', function() {
+    if (!isMuted) {
+        backgroundMusic.volume = this.value; // Cambia el volumen de la música si no está en mute
+    }
+});
+
+// Función para silenciar y reactivar la música
+muteBtn.addEventListener('click', function() {
+    if (isMuted) {
+        backgroundMusic.muted = false; // Reactivar la música
+        muteBtn.innerText = 'Mute'; // Cambiar el texto del botón
+    } else {
+        backgroundMusic.muted = true; // Silenciar la música
+        muteBtn.innerText = 'Unmute'; // Cambiar el texto del botón
+    }
+    isMuted = !isMuted; // Alternar el estado de mute
+});
+
+// Función para mostrar el menú de ajustes
+document.getElementById('options-btn').addEventListener('click', function() {
+    mainMenu.style.display = 'none'; // Oculta el menú principal
+    settingsMenu.style.display = 'flex'; // Muestra el menú de ajustes
+});
+
+// Función para volver al menú principal desde ajustes
+document.getElementById('back-btn').addEventListener('click', function() {
+    settingsMenu.style.display = 'none'; // Oculta el menú de ajustes
+    mainMenu.style.display = 'flex'; // Muestra el menú principal
+});
+
+
+
 // Función para leer el texto de la pregunta
 function speak(text) {
     if (canPlayVoice && 'speechSynthesis' in window) {

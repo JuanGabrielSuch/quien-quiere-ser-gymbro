@@ -23,6 +23,100 @@ body {
     animation: fadeIn 1s ease-in-out;
 }
 
+/* Estilos para el menú principal */
+#main-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ocupa toda la pantalla */
+    background-color: #001f3f; /* Color de fondo */
+    color: white;
+}
+
+#main-menu h1 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#main-menu button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    margin: 10px;
+    background-color: #39CCCC;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#main-menu button:hover {
+    background-color: #0074D9;
+}
+
+#settings-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #001f3f;
+    color: white;
+    padding: 20px;
+}
+
+#settings-menu h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#settings-menu label {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+#settings-menu input[type="range"] {
+    margin: 10px 0;
+    padding: 5px;
+    width: 200px;
+}
+
+#settings-menu button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #39CCCC;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#settings-menu button:hover {
+    background-color: #0074D9;
+}
+
+#mute-btn {
+    padding: 8px 15px;
+    font-size: 1rem;
+    margin-left: 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#mute-btn:hover {
+    background-color: #c82333;
+}
+
+
+
 /* Animación de entrada */
 @keyframes fadeIn {
     from {

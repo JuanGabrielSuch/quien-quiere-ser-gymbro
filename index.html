@@ -8,45 +8,67 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+
+    <!-- Menú principal -->
+    <div id="main-menu">
         <h1>¿Quién quiere ser gymbro?</h1>
-        <div id="game">
-            <div id="question-container">
-                <p id="question">Pregunta aparecerá aquí</p>
-                <button id="voice-btn" onclick="toggleVoice()">Reproducir Voz</button>
-            </div>
-            <div id="answers-container">
-                <!-- Botones de respuestas -->
-                <button class="answer-btn" id="answer1">Respuesta 1</button>
-                <button class="answer-btn" id="answer2">Respuesta 2</button>
-                <button class="answer-btn" id="answer3">Respuesta 3</button>
-                <button class="answer-btn" id="answer4">Respuesta 4</button>
-            </div>
+        <button id="play-btn">Jugar</button>
+        <button id="options-btn">Opciones</button>
+    </div>
 
-            <!-- Botón para pasar a la siguiente pregunta -->
-            <button id="next-question-btn" disabled>Siguiente</button>
+    <!-- Menú de Ajustes (inicialmente oculto) -->
+    <div id="settings-menu" style="display:none;">
+        <h2>Ajustes</h2>
+
+        <!-- Control de volumen de la música -->
+        <label for="music-volume">Volumen de la Música:</label>
+        <div>
+            <input type="range" id="music-volume" min="0" max="1" step="0.1" value="0.5">
+            <button id="mute-btn">Mute</button>
         </div>
-    </div>
-    
 
-
-
-
-    <!-- Contador de errores -->
-    <div id="error-counter">
-        Errores: 0 de 3
+        <!-- Botón para volver al menú principal -->
+        <button id="back-btn">Volver</button>
     </div>
 
-    <!-- Contador de preguntas -->
-    <div id="question-counter">
-        Pregunta 1 de 15
-    </div>
+    <!-- Música de fondo -->
+    <audio id="background-music" src="audio/eterna-City.mp3" loop autoplay></audio>
 
-    <!-- Comodines -->
-    <div id="lifelines">
-        <button id="call-lifeline">Comodín de la llamada</button>
-        <button id="audience-lifeline">Comodín del público</button>
-        <button id="fifty-lifeline">Comodín 50/50</button>
+
+    <!-- Juego (inicialmente oculto) -->
+    <div class="container" id="game" style="display: none;">
+        <h1>¿Quién quiere ser gymbro?</h1>
+        <div id="question-container">
+            <p id="question">Pregunta aparecerá aquí</p>
+            <button id="voice-btn" onclick="toggleVoice()">Reproducir Voz</button>
+        </div>
+        <div id="answers-container">
+            <!-- Botones de respuestas -->
+            <button class="answer-btn" id="answer1">Respuesta 1</button>
+            <button class="answer-btn" id="answer2">Respuesta 2</button>
+            <button class="answer-btn" id="answer3">Respuesta 3</button>
+            <button class="answer-btn" id="answer4">Respuesta 4</button>
+        </div>
+
+        <!-- Botón para pasar a la siguiente pregunta -->
+        <button id="next-question-btn" disabled>Siguiente</button>
+
+        <!-- Contador de errores (oculto inicialmente) -->
+        <div id="error-counter" style="display:none;">
+            Errores: 0 de 3
+        </div>
+
+        <!-- Contador de preguntas (oculto inicialmente) -->
+        <div id="question-counter" style="display:none;">
+            Pregunta 1 de 15
+        </div>
+
+        <!-- Comodines (ocultos inicialmente) -->
+        <div id="lifelines" style="display:none;">
+            <button id="call-lifeline">Comodín de la llamada</button>
+            <button id="audience-lifeline">Comodín del público</button>
+            <button id="fifty-lifeline">Comodín 50/50</button>
+        </div>
     </div>
 
     <script src="js/app.js"></script>
