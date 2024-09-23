@@ -1,35 +1,35 @@
 [
 	{
-		"question": "¿Cuál es la capital de Francia?",
+		"question":  "¿Cuál es el nombre de la joven cuyo asesinato marca el eje central en 'La verdad sobre el caso Harry Quebert'?",
 		"answers": [
-			"París",
-			"Madrid",
-			"Londres",
-			"Berlín"
+			"Nola Kellergan",
+			"Jenny Quinn",
+			"Tamara Quinn",
+			"Stephanie Mailer"
 		],
-		"correctAnswer": "París",
+		"correctAnswer": "Nola Kellergan",
 		"difficulty": "easy"
 	},
 	{
-		"question": "¿En qué año llegó el hombre a la luna?",
+		"question": "¿Qué nombre recibió el mono de peluche de la feria de albacete?",
 		"answers": [
-			"1965",
-			"1969",
-			"1971",
-			"1975"
+			"Paco",
+			"Manolo",
+			"Parserito",
+			"Manolito"
 		],
-		"correctAnswer": "1969",
+		"correctAnswer": "Parserito",
 		"difficulty": "easy"
 	},
 	{
-		"question": "¿Qué elemento químico tiene el símbolo 'O'?",
+		"question": "¿Cuál es el gentilicio de Villarrobledo?",
 		"answers": [
-			"Oro",
-			"Oxígeno",
-			"Osmio",
-			"Óxido"
+			"Villarroblense",
+			"Villarrobledense",
+			"Villarroblano",
+			"Villarroblado"
 		],
-		"correctAnswer": "Oxígeno",
+		"correctAnswer": "Villarrobledense",
 		"difficulty": "easy"
 	},
 	{
@@ -44,36 +44,36 @@
 		"difficulty": "easy"
 	},
 	{
-		"question": "¿Cuál es el planeta más grande del sistema solar?",
+		"question": "¿A cuánto estaba la Camelot?",
 		"answers": [
-			"Marte",
-			"Júpiter",
-			"Saturno",
-			"Neptuno"
+			"5 euros",
+			"5 euros con copa",
+			"10 euros",
+			"10 euros con dos copas"
 		],
-		"correctAnswer": "Júpiter",
+		"correctAnswer": "5 euros con copa",
 		"difficulty": "easy"
 	},
 	{
-		"question": "¿Qué país tiene la mayor población del mundo?",
+		"question": "¿Qué cantidad de alcohol en sangre diste en Albacete? (pedazo de suertudo)",
 		"answers": [
-			"China",
-			"India",
-			"Estados Unidos",
-			"Brasil"
+			"0,23",
+			"0,25",
+			"0,24",
+			"0,50"
 		],
-		"correctAnswer": "China",
-		"difficulty": "medium"
+		"correctAnswer": "0,24",
+		"difficulty": "easy"
 	},
 	{
-		"question": "¿Cuál es el metal más abundante en la corteza terrestre?",
+		"question": "¿Cómo se llama la interna que tenía problemas con Alicia en 'La paciente silenciosa'?",
 		"answers": [
-			"Aluminio",
-			"Hierro",
-			"Cobre",
-			"Plata"
+			"Kathy",
+			"Lydia",
+			"Elif",
+			"Stephanie"
 		],
-		"correctAnswer": "Aluminio",
+		"correctAnswer": "Elif",
 		"difficulty": "medium"
 	},
 	{
@@ -88,58 +88,58 @@
 		"difficulty": "medium"
 	},
 	{
-		"question": "¿Cuál es el océano más grande del mundo?",
+		"question": "¿Cuál es el número de teléfono de Carmen Díaz (la mama)?",
 		"answers": [
-			"Atlántico",
-			"Pacífico",
-			"Índico",
-			"Ártico"
+			"669017089",
+			"669071089",
+			"696017089",
+			"669071098"
 		],
-		"correctAnswer": "Pacífico",
+		"correctAnswer": "669071089",
 		"difficulty": "medium"
 	},
 	{
-		"question": "¿Qué gas es esencial para la respiración humana?",
+		"question": "¿Qué recomienda el Lolo para mejorar físicamente?",
 		"answers": [
-			"Oxígeno",
-			"Dióxido de carbono",
-			"Nitrógeno",
-			"Helio"
+			"Entrenamiento duro",
+			"Dieta estricta",
+			"Un poquito de oxa y un poco de wins",
+			"Quedarse calvo como una rodilla"
 		],
-		"correctAnswer": "Oxígeno",
+		"correctAnswer": "Un poquito de oxa y un poco de wins",
 		"difficulty": "medium"
 	},
 	{
-		"question": "¿Quién escribió 'La Odisea'?",
+		"question": "¿Autor favorito de Juanga?",
 		"answers": [
-			"Homero",
-			"Sófocles",
-			"Platón",
-			"Aristóteles"
+			"Brandon Sanderson",
+			"Alex Michaellides",
+			"Joel Dicker",
+			"Arthur Connan Doyle"
 		],
-		"correctAnswer": "Homero",
+		"correctAnswer": "Arthur Connan Doyle",
 		"difficulty": "hard"
 	},
 	{
-		"question": "¿Cuál es la molécula responsable del transporte de oxígeno en la sangre?",
+		"question": "Durante el mood lituano ¿Qué se dice antes de brindar o tomar un chupito?",
 		"answers": [
-			"Hemoglobina",
-			"Leucocitos",
-			"Plaquetas",
-			"Insulina"
+			"itaca",
+			"Cheers",
+			"I sveikata",
+			"Chupitasen for you"
 		],
-		"correctAnswer": "Hemoglobina",
+		"correctAnswer": "I sveikata",
 		"difficulty": "hard"
 	},
 	{
-		"question": "¿Quién pintó 'La última cena'?",
+		"question": "¿Cuál es el apodo de la familia de Fran en Villarrobledo",
 		"answers": [
-			"Leonardo da Vinci",
-			"Miguel Ángel",
-			"Rafael",
-			"Donatello"
+			"Bicicleta",
+			"Bicicleto",
+			"Ruedines",
+			"Hinduráin"
 		],
-		"correctAnswer": "Leonardo da Vinci",
+		"correctAnswer": "Bicicleta",
 		"difficulty": "hard"
 	},
 	{
