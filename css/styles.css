@@ -92,6 +92,11 @@ h1 {
     z-index: 1;
 }
 
+#voice-btn {
+    z-index: 10; /* Asegura que el botón esté por encima de otros elementos */
+    position: relative; /* Asegúrate de que tenga una posición definida */
+}
+
 /* Estilo para respuestas correctas */
 .correct {
     background-color: #28a745 !important; /* Verde */
