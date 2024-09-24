@@ -394,14 +394,15 @@ h1 {
     h1 {
         font-size: 1.2rem;
     }
-
+    
     #main-menu h1 {
-        font-size: 1.5rem; /* Tamaño más pequeño del título para móviles */
+        font-size: 1.2rem; /* Tamaño más pequeño para teléfonos */
+        margin-bottom: 20px; /* Ajustar el margen para que no ocupe demasiado espacio */
     }
 
     #main-menu button {
-        padding: 10px 20px; /* Reducir aún más el padding */
-        font-size: 0.9rem; /* Texto más pequeño en botones */
+        padding: 10px 20px;
+        font-size: 0.9rem;
     }
 
     #question-container {
