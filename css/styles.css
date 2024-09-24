@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     margin: 0;
     overflow: hidden;
 }
@@ -21,6 +21,10 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     position: relative;
     animation: fadeIn 1s ease-in-out;
+    height: 100vh; /* Asegura que el contenedor ocupe todo el alto de la ventana */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #main-menu {
@@ -237,6 +241,7 @@ h1 {
 
 /* Contenedor de los comodines */
 #lifelines {
+    z-index: 10;
     position: fixed;
     bottom: 20px;
     left: 20px;
@@ -359,10 +364,10 @@ h1 {
     }
 
     #question-container {
-        font-size: 1rem;
-        padding: 15px;
+        position: relative; /* Asegura que no se superponga con otros elementos */
+        margin-bottom: 120px; /* Deja espacio suficiente para los contadores y comodines */
     }
-
+    
     .answer-btn {
         font-size: 1rem;
         padding: 12px;
