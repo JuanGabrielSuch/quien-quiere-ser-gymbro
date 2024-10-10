@@ -223,7 +223,7 @@ function nextQuestion() {
     if (currentQuestionIndex < questions.length && errorCount < maxErrors) {
         showQuestion();
     } else if (errorCount < maxErrors) {
-        alert('Menudo craack -> 4926');
+        alert('¡Felicidades hermano! -> 4926');
     }
 }
 
