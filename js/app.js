@@ -103,7 +103,7 @@ document.getElementById('play-btn').addEventListener('click', function() {
 const backgroundMusic = document.getElementById('background-music');
 const settingsMenu = document.getElementById('settings-menu');
 const muteBtn = document.getElementById('mute-btn');
-let isMuted = false; // Variable para controlar si la música está silenciada
+let isMuted = true; // Variable para controlar si la música está silenciada
 
 
 // Control de volumen de la música
@@ -117,7 +117,7 @@ document.getElementById('music-volume').addEventListener('input', function() {
 muteBtn.addEventListener('click', function() {
     if (isMuted) {
         backgroundMusic.muted = false; // Reactivar la música
-        muteBtn.innerText = 'Mute'; // Cambiar el texto del botón
+        muteBtn.innerText = 'Mute'; // Cambiar el texto del botón 
     } else {
         backgroundMusic.muted = true; // Silenciar la música
         muteBtn.innerText = 'Unmute'; // Cambiar el texto del botón
@@ -160,6 +160,15 @@ function speak(text) {
     } else {
         console.log('La voz está desactivada o el navegador no soporta speechSynthesis.');
     }
+}
+
+function handleClick(event) {
+
+    const selectedButton = event.target
+
+
+
+
 }
 
 
@@ -214,7 +223,7 @@ function nextQuestion() {
     if (currentQuestionIndex < questions.length && errorCount < maxErrors) {
         showQuestion();
     } else if (errorCount < maxErrors) {
-        alert('¡Has completado el juego!');
+        alert('Menudo craack -> 4926');
     }
 }
 
