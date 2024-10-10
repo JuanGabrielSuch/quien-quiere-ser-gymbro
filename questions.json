@@ -27,7 +27,7 @@
 			"Villarroblense",
 			"Villarrobledense",
 			"Villarroblano",
-			"Villarroblado"
+			"Villarrobledano"
 		],
 		"correctAnswer": "Villarrobledense",
 		"difficulty": "easy"
@@ -55,7 +55,7 @@
 		"difficulty": "easy"
 	},
 	{
-		"question": "¿Qué cantidad de alcohol en sangre diste en Albacete? (pedazo de suertudo)",
+		"question": "¿Qué cantidad de alcohol en sangre diste en Albacete?",
 		"answers": [
 			"0,23",
 			"0,25",
@@ -77,14 +77,14 @@
 		"difficulty": "medium"
 	},
 	{
-		"question": "¿Cuál es el animal terrestre más rápido?",
+		"question": "¿Qué hormona, conocida como la hormona del crecimiento, se eleva durante los entrenamientos de alta intensidad y promueve la regeneración muscular?",
 		"answers": [
-			"Guepardo",
-			"León",
-			"Tigre",
-			"Elefante"
+		  "Testosterona",
+		  "Cortisol",
+		  "Somatotropina",
+		  "Insulina"
 		],
-		"correctAnswer": "Guepardo",
+		"correctAnswer": "Somatotropina",
 		"difficulty": "medium"
 	},
 	{
@@ -143,25 +143,25 @@
 		"difficulty": "hard"
 	},
 	{
-		"question": "¿En qué año comenzó la Primera Guerra Mundial?",
+		"question": "¿Qué te trajo Papa Noel cuando eras pequeño y te hizo mucha ilusión?",
 		"answers": [
-			"1912",
-			"1914",
-			"1916",
-			"1918"
+			"Una bici",
+			"Un ordenador",
+			"Un polvoron",
+			"Una raqueta"
 		],
-		"correctAnswer": "1914",
+		"correctAnswer": "Un polvoron",
 		"difficulty": "hard"
 	},
 	{
-		"question": "¿Qué órgano del cuerpo humano produce la insulina?",
+		"question": "¿Cómo te llamaba la mama de pequeño?",
 		"answers": [
-			"Hígado",
-			"Páncreas",
-			"Riñones",
-			"Estómago"
+			"Princesito",
+			"Pececito",
+			"Enano",
+			"Dillunset"
 		],
-		"correctAnswer": "Páncreas",
+		"correctAnswer": "Pececito",
 		"difficulty": "hard"
 	}
 ]
